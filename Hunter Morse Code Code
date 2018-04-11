@@ -1,0 +1,74 @@
+int sensePin = 2;   
+int ledPin = 9;      
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ledPin, OUTPUT);
+  pinMode(4, INPUT);
+}
+
+void loop() {
+  int value = analogRead(sensePin) / 4; 
+  analogWrite(ledPin, value);
+  Serial.println(value);  
+  int button = digitalRead(4);
+  
+  if (value > 20) {
+    tone(13, 600, 5);
+    analogWrite(ledPin, value);
+  }
+  
+  else {
+    digitalWrite(13, LOW);
+  }
+
+  if (button == HIGH) {
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(1000);
+
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(1000);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(1000);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(1000);
+    analogWrite(ledPin, 0);
+    delay(1000);
+  
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(250);
+    tone(13, 600, 5);
+    analogWrite(ledPin, 150);
+    delay(250);
+    analogWrite(ledPin, 0);
+    delay(1000);  
+  }
+}
