@@ -12,4 +12,8 @@ This repository holds the updated code for each arduino project on the Arduino P
 and more once other group members put in their code (-_-)
 
 
-Please enjoy this code and feel free to test out any of these projects with an Arduino of your own. This is an open source project to show off the capabilities and benefits of Arduinos.
+Please enjoy this code and feel free to test out any of these projects with an Arduino of your own. This is an open source project to show off the capabilities and benefits of Arduinos. 
+
+Resources for Arduino basics can be found at:
+- http://oomlout.com/a/products/ardx/ (Online copy of the book our class used to learn Arduino)
+- https://www.arduino.cc/en/Guide/HomePage (Initial setup instructions for Arduino)
