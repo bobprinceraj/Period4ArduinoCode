@@ -23,6 +23,7 @@ void loop() {
   }
 
   if (button == HIGH) {
+    //This code writes out SOS using the speaker and LEDs
     tone(13, 600, 5);
     analogWrite(ledPin, 150);
     delay(250);
